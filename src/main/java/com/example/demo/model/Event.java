@@ -20,6 +20,9 @@ public class Event implements Serializable {
     private LocalDateTime localDateTime;
 
     @Column
+    private String title;
+
+    @Column
     private String description;
 
     @Column

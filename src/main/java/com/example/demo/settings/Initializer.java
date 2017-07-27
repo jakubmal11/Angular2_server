@@ -16,18 +16,22 @@ public class Initializer implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         Event event = new Event();
-        event.setDescription("Some1");
+        event.setTitle("Title1");
+        event.setDescription("Description1");
         LocalDateTime localDate = LocalDateTime.of(2017, 7, 22, 10, 33);
         event.setLocalDate(localDate.toLocalDate());
         event.setLocalDateTime(localDate);
         eventRepository.save(event);
         event = new Event();
-        event.setDescription("Some2");
+        event.setTitle("Title3");
+        event.setDescription("Description2");
         localDate = LocalDateTime.of(2017, 7, 3, 10, 33);
         event.setLocalDate(localDate.toLocalDate());
         event.setLocalDateTime(localDate);
-        eventRepository.save(event);event = new Event();
-        event.setDescription("Some3");
+        eventRepository.save(event);
+        event = new Event();
+        event.setTitle("Title3");
+        event.setDescription("Description3");
         localDate = LocalDateTime.of(2017, 7, 18, 10, 33);
         event.setLocalDate(localDate.toLocalDate());
         event.setLocalDateTime(localDate);
